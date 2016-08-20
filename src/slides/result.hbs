@@ -1,0 +1,11 @@
+{{#partial heading}}Error handling{{/partial}}
+{{#partial page}}
+  <script>var nextSlide = "ownership_intro"</script>
+  <ul class="body-content">
+  	<li><code>Result<T, E></code> is for representing a result that's either <code>Ok</code> or an <code>Error</code></li>
+  	<li>You can use <code>match</code> to destructure a result and act accordingly</li>
+  	<li>The <code>try!</code> macro saves boilerplate when working with <code>Result</code>s</li>
+  </ul>
+  <iframe class="body-sample" src="http://localhost:5000?gist=880cc3a7c24f80d964e2a05b9d078344" />
+{{/partial}}
+{{> base }}

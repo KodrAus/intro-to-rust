@@ -1,0 +1,12 @@
+{{#partial heading}}Ownership - Lifetimes{{/partial}}
+{{#partial page}}
+  <script>var nextSlide = "index"</script>
+
+  <ul class="body-content">
+  	<li>A lifetime is scope an item is valid for</li>
+  	<li>Rust treats lifetimes explicitly with generic params, like <code>'a</code></li>
+  	<li>A borrow is valid for a lifetime, no longer than the lifetime of the original item, like <code>&'a</code></li>
+  </ul>
+  <iframe class="body-sample" src="http://localhost:5000?gist=906155dc5884c63988309abb58153beb" />
+{{/partial}}
+{{> base }}
