@@ -1,0 +1,11 @@
+[package]
+name = "intro-to-rust"
+version = "0.1.0"
+authors = ["Ashley Mannix <ashleymannix@live.com.au>"]
+
+[dependencies]
+iron = "*"
+router = "*"
+mount = "*"
+staticfile = "*"
+handlebars-iron = "*"

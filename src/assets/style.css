@@ -1,0 +1,83 @@
+code {
+	font-size: 1.4em;
+	color: rgb(39, 39, 39);
+	background: rgb(237, 234, 234) none repeat scroll 0% 0%;
+	padding: 3px 1px;
+	border-radius: 3px;
+}
+
+@keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: -600px 0; }
+    100% { background-position: 0 0; }
+}
+
+.home-img-back {
+	background-image: url('/assets/rustacean.png');
+	background-position: 0px 0px;
+	background-size: contain;
+
+	width: 100%;
+	height: 15%;
+
+	animation: animatedBackground 15s linear infinite;
+}
+
+.home-img-mid {
+	background-image: url('/assets/rustacean.png');
+	background-position: 0px 0px;
+	background-size: contain;
+
+	width: 100%;
+	height: 35%;
+
+	animation: animatedBackground 10s linear infinite;
+}
+
+.home-img-front {
+	background-image: url('/assets/rustacean.png');
+	background-position: 0px 0px;
+	background-size: contain;
+
+	width: 100%;
+	height: 50%;
+
+	animation: animatedBackground 5s linear infinite;
+}
+
+.happy-crab {
+	background-image: url('/assets/rustacean.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	height: 50px;
+	width: 50px;
+	display: block;
+	float: left;
+
+	margin-right: 10px;
+}
+
+.heading {
+	height: 5%;
+	margin: 2%;
+}
+
+.body-content {
+	width: 100%;
+	height: 15%;
+	margin: 0 4%;
+	border: none;
+}
+
+.body-sample {
+	width: 100%;
+	height: 65%;
+	margin: 1%;
+	border: none;
+}
+
+.next, .back {
+	color: #ccc;
+	cursor: pointer;
+}
