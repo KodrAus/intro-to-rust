@@ -90,5 +90,5 @@ code {
 .next, .back {
 	color: #ccc;
 	cursor: pointer;
-	margin-left: 20px;
+	margin: 0 20px;
 }
