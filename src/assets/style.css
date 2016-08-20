@@ -2,9 +2,17 @@ body {
 	font-family: 'Fira Sans';
 }
 
+ul {
+	list-style: none;
+}
+
 li, p {
 	font-size: 1.2em;
 	margin-bottom: 10px;
+}
+
+li::before {
+	content: '- ';
 }
 
 code {
@@ -17,7 +25,6 @@ code {
 
 img {
 	max-height: 100%;
-	margin: 0 20px;
 	width: auto;
 }
 
@@ -114,8 +121,11 @@ img {
 	float: right;
 }
 
-.quote {
+.big {
 	font-size: 2em;
+}
+
+.quote {
 	font-style: italic;
 	position: relative;
 }
