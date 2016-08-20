@@ -1,10 +1,12 @@
 <html>
   <head>
   	<link rel="stylesheet" type="text/css" href="/assets/style.css" />
+  	<link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
+  	<script type="text/javascript" src="/assets/script.js"></script>
   </head>
   <body>
     <div class="heading">
-    	<h1><span class="happy-crab"></span> Getting into Rust <span class="back" onclick="window.history.back()"><</span> <span class="next" href="next">></span></h1>
+    	<h1><span class="happy-crab"></span> Getting into Rust <span class="back" onclick="window.history.back()"><</span><span class="next" onclick="next(nextSlide)">></span></h1>
     </div>
     {{~#block page}}{{/block~}}
   </body>

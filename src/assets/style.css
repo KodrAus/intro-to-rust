@@ -1,3 +1,12 @@
+body {
+	font-family: 'Fira Sans';
+}
+
+li {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
 code {
 	font-size: 1.4em;
 	color: rgb(39, 39, 39);
@@ -47,6 +56,7 @@ code {
 
 .happy-crab {
 	background-image: url('/assets/rustacean.png');
+	background-position: 0px 4px;
 	background-size: contain;
 	background-repeat: no-repeat;
 
@@ -64,20 +74,21 @@ code {
 }
 
 .body-content {
-	width: 100%;
+	width: 92%;
 	height: 15%;
 	margin: 0 4%;
 	border: none;
 }
 
 .body-sample {
-	width: 100%;
-	height: 65%;
-	margin: 1%;
+	width: 96%;
+	height: 70%;
+	margin: 0% 2%;
 	border: none;
 }
 
 .next, .back {
 	color: #ccc;
 	cursor: pointer;
+	margin-left: 20px;
 }
