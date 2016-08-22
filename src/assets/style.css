@@ -90,6 +90,7 @@ img {
 	width: 92%;
 	height: 85%;
 	margin: 0 4%;
+	overflow: hidden;
 }
 
 .body-content {
@@ -157,4 +158,8 @@ img {
 
 .quote-src::before {
 	content: '— ';
+}
+
+img.fill {
+	width: 100%;
 }
