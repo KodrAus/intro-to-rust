@@ -106,6 +106,13 @@ img {
 	border: none;
 }
 
+.body-img {
+	height: 85%;
+	width: auto;
+	margin: auto;
+	display: block;
+}
+
 .next, .back {
 	color: #ccc;
 	cursor: pointer;
@@ -162,4 +169,11 @@ img {
 
 img.fill {
 	width: 100%;
+}
+
+.caption {
+	position: absolute;
+    bottom: 0px;
+    text-align: center;
+    width: 98%;
 }
