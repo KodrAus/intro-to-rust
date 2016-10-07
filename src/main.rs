@@ -7,7 +7,7 @@ extern crate handlebars_iron as hbs;
 use std::path::Path;
 
 use iron::prelude::*;
-use iron::{ status };
+use iron::status;
 use mount::Mount;
 use router::Router;
 use staticfile::Static;
@@ -16,7 +16,6 @@ use hbs::{ Template, HandlebarsEngine, DirectorySource };
 fn main() {
 	let mut hbse = HandlebarsEngine::new();
 
-	// add a directory source, all files with .hbs suffix will be loaded as template
 	hbse.add(Box::new(DirectorySource::new("./src/slides/", ".hbs")));
 	hbse.reload().unwrap();
 
@@ -38,6 +37,7 @@ fn main() {
 fn index(_: &mut Request) -> IronResult<Response> {
 	let mut resp = Response::new();
 	resp.set_mut(Template::new("index", Some(()))).set_mut(status::Ok);
+
 	Ok(resp)
 }
 
@@ -47,5 +47,6 @@ fn render(r: &mut Request) -> IronResult<Response> {
 
 	let mut resp = Response::new();
 	resp.set_mut(Template::new(&path, Some(()))).set_mut(status::Ok);
+	
 	Ok(resp)
 }

@@ -28,9 +28,21 @@ img {
 	width: auto;
 }
 
-@keyframes animatedBackground {
+@keyframes animBack {
     0% { background-position: 0 0; }
-    50% { background-position: -600px 0; }
+    50% { background-position: -300px 0; }
+    100% { background-position: 0 0; }
+}
+
+@keyframes animMid {
+    0% { background-position: 0 0; }
+    50% { background-position: 600px 0; }
+    100% { background-position: 0 0; }
+}
+
+@keyframes animFront {
+    0% { background-position: 0 0; }
+    50% { background-position: -1200px 0; }
     100% { background-position: 0 0; }
 }
 
@@ -42,7 +54,7 @@ img {
 	width: 100%;
 	height: 15%;
 
-	animation: animatedBackground 15s linear infinite;
+	animation: animBack 10s linear infinite;
 }
 
 .home-img-mid {
@@ -53,7 +65,7 @@ img {
 	width: 100%;
 	height: 35%;
 
-	animation: animatedBackground 10s linear infinite;
+	animation: animMid 10s linear infinite;
 }
 
 .home-img-front {
@@ -64,7 +76,7 @@ img {
 	width: 100%;
 	height: 50%;
 
-	animation: animatedBackground 5s linear infinite;
+	animation: animFront 10s linear infinite;
 }
 
 .happy-crab {
@@ -90,6 +102,9 @@ img {
 	width: 92%;
 	height: 85%;
 	margin: 0 4%;
+}
+
+.noscroll {
 	overflow: hidden;
 }
 
